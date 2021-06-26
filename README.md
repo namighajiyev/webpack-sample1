@@ -1,0 +1,1 @@
+## Sample Webpack setup for frontend development
