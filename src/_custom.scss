@@ -3,7 +3,9 @@ $bg:black;
 
 body {
     color:$text;
-    background : $bg;
+    background-image: url('assets/images/bg.jpg');
+    background-color: $bg;
+    background-repeat: no-repeat;
 }
 $primary:teal;
 

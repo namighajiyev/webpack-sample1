@@ -6,8 +6,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(svg|jpg|jpeg|png|gif)$/,
+                test: /\.(jpg|jpeg|png|gif)$/,
                 type: 'asset/resource'
+            },
+            {
+                test: /\.svg$/,
+                type: 'asset/resource',
+                use: 'svgo-loader'
             },
             {
                 test: /\.html$/,
