@@ -10,7 +10,8 @@ module.exports = merge(common, {
     output: {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, 'build'),
-        clean: true
+        clean: true,
+        assetModuleFilename: 'images/[name][ext]'
     },
     plugins: [
         new BundleAnalyzerPlugin({

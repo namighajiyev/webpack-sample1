@@ -6,6 +6,19 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(svg|jpg|jpeg|png|gif)$/,
+                type: 'asset/resource'
+            },
+            {
+                test: /\.html$/,
+                use: [{
+                    loader: 'html-loader',
+                    options: {
+                        // sources: false
+                    }
+                }]
+            },
+            {
                 test: /\.scss$/,
                 use: [
                     { loader: 'style-loader' },

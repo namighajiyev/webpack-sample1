@@ -8,7 +8,8 @@ module.exports = merge(common, {
     output: {
         filename: "[name].bundle.[contenthash].js",
         path: path.resolve(__dirname, 'build'),
-        clean: true
+        clean: true,
+        assetModuleFilename: 'images/[name][contenthash][ext][query]'
     },
     plugins: [
         new HtmlWebpackPlugin({
